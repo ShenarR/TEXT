@@ -9,19 +9,22 @@
 
 <body>
     <script>
-       /*  if ('m' in window) {
+        /*  
+        if ('m' in window) {
             var m = m && 12;
         }
         console.log(m);
-        
-        let n = 10;
 
+        let n = 10;
         if (!('n' in window)) {
             let n = n + 30;//报错
         }
         console.log(n);
- */
-       /*  let n = 10, 
+        */
+
+
+        /*  
+        let n = 10, 
         m = 20; 
         ~function (n, m) { 
             console.log(arguments)
@@ -32,26 +35,34 @@
         console.log(n, m); 
         console.log(arg[0],arg[1],arguments);
         }(m); 
-        console.log(n, m); */
 
-       
+        console.log(n, m); 
+        */
 
 
-       /*  let i = 0;
-         let fn = function (n) {
-             i += 2;
-             return function (m) {
-                 i += (++n) + (m--);
-                 console.log(i);
-             }
-         };
-         let f = fn(2);
-         f(3);
-         fn(2)(3);
-         f(4);
-         console.log(i); */
 
-        /* let n = 10,
+
+
+        /* 
+        let i = 0;
+        let fn = function (n) {
+            i += 2;
+            return function (m) {
+                i += (++n) + (m--);
+                console.log(i);
+            }
+        };
+        let f = fn(2);
+        f(3);
+        fn(2)(3);
+        f(4);
+        console.log(i); 
+        */
+
+
+
+        /*
+        let n = 10,
             obj = { n: 20 };
         let fn = obj.fn = (function () {
             this.n++;
@@ -64,13 +75,20 @@
         })(obj.n);
         fn(10);
         obj.fn(10);
-        console.log(n, obj.n); */
-        /*  let a = { n: 4 };
-         let b = a;
-         b.x = a = { n: 10 };
-         console.log(a.x);
-         console.log(b.x); */
-      /*    
+        console.log(n, obj.n);
+        */
+
+
+        /*
+        let a = { n: 4 };
+        let b = a;
+        b.x = a = { n: 10 };
+        console.log(a.x);
+        console.log(b.x); 
+        */
+
+
+        /*    
         function C1(name) {
             if (name)this.name = n = name;
         } 
@@ -83,7 +101,9 @@
         C1.prototype.name =  'Tom' ;
         C2.prototype.name =  'Tom'; 
         C3.prototype.name = 'Tom'; 
-        alert(new (new C1().name + new C2().name + new C3().name); */
+        alert(new (new C1().name + new C2().name + new C3().name);
+        */
+
     </script>
 </body>
 
