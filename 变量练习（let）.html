@@ -104,6 +104,38 @@
         alert(new (new C1().name + new C2().name + new C3().name);
         */
 
+
+
+        /*
+        function Foo() {
+            getName = function () { alert(1); };
+            return this;
+        }
+
+        Foo.getName = f = function () { alert(2); };
+
+        Foo.prototype.getName = f = function () { alert(3); };
+        var getName = function () { alert(4); };
+        function getName() { alert(5); }
+
+        //请写出以下输出结果：
+        Foo.getName(); //2
+
+        getName(); //变量提升 var getName=undefind getName=fn.. -> getName=弹5
+                   //代码执行 赋值 getName=弹4
+
+        Foo().getName();  // Foo() 执行并返回window 此时全局的getName=弹1
+
+        getName();  // 全局 getName=弹1
+
+        new Foo.getName(); // 此处new仅相当于运行 Foo.getName
+
+        new Foo().getName(); // 先 new Foo() 实例化对象 
+                             // 实例化对象.getName() 构造函数原型上的
+
+        new new Foo().getName(); //new Foo()  
+                                 //new.实例化对象.getName()
+         */
     </script>
 </body>
 
